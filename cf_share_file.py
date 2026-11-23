@@ -125,7 +125,6 @@ def main() -> int:
                 if m:
                     found = True
                     print_public_url(m.group(0) + url_path)
-                    print("(DNS may need a few seconds; Ctrl+C to stop)", file=sys.stderr)
         code = proc.wait()
         if not found:
             sys.stderr.write("".join(log[-20:]))

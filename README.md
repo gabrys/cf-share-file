@@ -60,7 +60,7 @@ uvx twine check --strict dist/*
 
 ## Publishing
 
-The current version is `0.2.0`. Build from a clean checkout using the commands
+The current version is `0.3.0`. Build from a clean checkout using the commands
 above, ensuring `dist/` contains only the current release. Upload to TestPyPI:
 
 ```sh
@@ -70,7 +70,7 @@ uvx twine upload --repository testpypi dist/*
 Verify the TestPyPI release in an isolated environment:
 
 ```sh
-uvx --isolated --index https://test.pypi.org/simple/ --default-index https://pypi.org/simple/ cf-share-file@0.2.0 --help
+uvx --isolated --index https://test.pypi.org/simple/ --default-index https://pypi.org/simple/ cf-share-file@0.3.0 --help
 ```
 
 Then upload the same artifacts to PyPI:
